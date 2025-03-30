@@ -56,7 +56,7 @@ void Physics::ApplyGravity(Lander* lander, float deltaTime) {
     float* velocity = lander->GetVelocity();
     
     // Apply gravity (only in Y direction for 2D mode)
-    velocity[1] += mGravity * deltaTime;
+    velocity[1] += mGravity * deltaTime * 10.31f;
     
     // In 3D mode, gravity would be applied based on coordinate system
     if (m3DMode) {
